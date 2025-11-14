@@ -7,5 +7,9 @@ GROUP BY c.id
 ORDER BY sum(unit_price) desc
 LIMIT 5;
 
---TASK 2
-SELECT * From customers;
+--TASK 2 - Total Revenue by Product Category
+SELECT p.category, SUM(oi.quantity * p.price) AS total_revenue
+FROM products AS p
+JOIN order_items AS oi ON p.id = oi.product_id
+GROUP BY p.category
+ORDER BY total_revenue DESC;
