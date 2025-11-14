@@ -3,8 +3,8 @@
         {
             "previewLimit": 50,
             "driver": "SQLite",
-            "name": "codealong",
-            "group": "codeGroup",
+            "name": "Coding Challenge - SQLite Analytics",
+            "group": "sqlite group",
             "database": "bais_sqlite_lab.db"
         }
     ],
