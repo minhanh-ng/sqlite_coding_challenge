@@ -15,7 +15,10 @@ GROUP BY p.category
 ORDER BY total_revenue DESC;
 
 -- TASK 3 - Employees Earning Above Their Department Average
-SELECT e.id, e.first_name, e.last_name, e.salary, d.name
+SELECT e.id, e.first_name, e.last_name, e.salary, d.name, 
+    (SELECT AVG(salary) 
+     FROM employees 
+     WHERE department_id = e.department_id) AS department_avg
 FROM employees AS e
 JOIN departments AS d ON e.department_id = d.id
 WHERE e.salary > (SELECT AVG(salary) 
@@ -29,5 +32,4 @@ FROM customers AS c
 JOIN orders AS o ON c.id = o.customer_id
 WHERE c.loyalty_level = 'Gold'
 GROUP BY c.city
-ORDER BY loyal_customers DESC
-;
+ORDER BY loyal_customers DESC, city ASC;
