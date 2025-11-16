@@ -1,4 +1,4 @@
-- For task 1, the result shows Top 5 Customers by Total Spend. Total spend is calculated by sum function of multiplying quantity and unit price from order_items table, after the SUM function, it's GROUP BY the customer ID.
+- For task 1, the result shows Top 5 Customers by Total Spend. Total spend is calculated by sum function of multiplying quantity and unit price from order_items table, after the SUM function, it's GROUP BY by the customer ID.
 - The result of task 1 shows 5 customers that spent the most, Jacob Foster spent the most with the total spend of $8722.67.
 - Task 2 shows Total Revenue by Product Category. The category with the highest revenue is Electronics with revenue of 25364.23 and the category with lowest revenue is Stationery with $319.24.
 - Task 3 shows Employees who Earn Above Their Department Average. There are 5 employees in this category: Farah - Finance, Maya - IT, Carol - Marketing, Kira - Operations, and Alice - Sales. 
