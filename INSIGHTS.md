@@ -1,1 +1,9 @@
-- 
+- For task 1, the result shows Top 5 Customers by Total Spend. Total spend is calculated by sum function of multiplying quantity and unit price from order_items table, after the SUM function, it's GROUP BY the customer ID.
+- The result of task 1 shows 5 customers that spent the most, Jacob Foster spent the most with the total spend of $8722.67.
+- Task 2 shows Total Revenue by Product Category. The category with the highest revenue is Electronics with revenue of 25364.23 and the category with lowest revenue is Stationery with $319.24.
+- Task 3 shows Employees who Earn Above Their Department Average. There are 5 employees in this category: Farah - Finance, Maya - IT, Carol - Marketing, Kira - Operations, and Alice - Sales. 
+- The department with the highest average salary is IT ~ $105,333.
+- Employee with the highest salary is Maya Bennett ~ $112,000.
+- From task 4, Tampa has the highest number of Gold tier loyal customer with 4 customers.
+- For Silver tier, there are 3. One from Brandon, one is from Sarasota, and the last one is from St.Petersburg.
+- For Bronze tier, there is one loyal customer from Clearwater, one from Lakeland, one from Orlando.
